@@ -174,7 +174,7 @@ def create(request):
             print(f"{settings.BASE_SITE_URL}{str(reverse('job:job_list'))}")
             response = requests.post(f"{settings.BASE_SITE_URL}{str(reverse('job:job_list'))}",data=data)
 
-            print("try"*100)
+            print("try2"*100)
             print(response)
             return redirect('job:home')
     else:

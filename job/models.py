@@ -5,8 +5,8 @@ from django.db import models
 
 class Task(models.Model):
     title = models.CharField(max_length=250, null=True)
-    description = models.TextField(max_length=10, null=True)
-    priority = models.IntegerField(max_length=30)
+    description = models.TextField(max_length=10000, null=True)
+    priority = models.IntegerField()
     
     start_on = models.DateTimeField(
         verbose_name="Updated On", blank=True, auto_now_add=True
