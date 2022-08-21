@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'job:create' %}" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        
+        <input name="id" value="{{id}}" style="display:none;"> 
+        <label> Title</lable>
+        <input name="title" value="{{title}}"><br>
+        <label> Description</lable>
+        <input name="description" value="{{description}}"><br>
+        <label> Priority</lable>
+        <input name="priority" value="{{priority}}"><br>
+        <label> Start On</lable>
+        <input name="start_on" value="{{start_on| date:"Y-m-d H:h"}}"><br>
+        <label> End On</lable>
+        <input name="end_on" value="{{end_on| date:"Y-m-d H:h"}}"><br>
+        <li class="list-inline-item">
+          <button class="btn btn-danger btn-sm rounded-0" type="submit" data-toggle="tooltip"
+            data-placement="top" title="Submit" ><i class="fa fa-trash"></i>Submit</button>
+        </li>
+      </form>
+</body>
+</html>

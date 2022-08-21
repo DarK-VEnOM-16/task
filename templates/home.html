@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body style="justify-content: center;align-items: center;background: WhiteSmoke; font-family:sans-serif;">
+  {% comment %} <nav class="navbar navbar-expand-lg bg-light" style="padding:5px 70px 5px 70px">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tutorial Republic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">JAVASCRIPT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">JQUERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BOOTSTRAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PHP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SQL</a>
+          </li>
+
+
+        </ul>
+        <button type="button" class="btn btn-primary btn-sm" data-target="#myModal" data-toggle="modal"><i
+            class="fa fa-arrows-alt"></i> Fullscreen</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary btn-sm" data-target="#myModal" data-toggle="modal"><i
+            class="fa fa-eye" aria-hidden="true"></i> View Code</button>
+      </div>
+    </div>
+  </nav> {% endcomment %}
+  <nav class="navbar navbar-expand-lg bg-dark" style="padding:5px 70px 5px 70px; background: black; color: white;">
+    <div class="container-fluid">
+      <h3> Crud Data Table for Database </h3>
+      {% comment %}
+      <form class="d-flex" role="button" style="padding-top:10px ;padding-bottom:10px">
+        <div class="tags pull-right">
+
+          <i class="fa fa-tags"></i> Tags &nbsp;
+          <button type="button" class="btn btn-outline-light" style="border-radius:50px ;padding: 3px 8px ">Bootstrap
+            4</button>&nbsp;
+          <button type="button" class="btn btn-outline-light"
+            style="border-radius:50px ;padding: 3px 8px">Table</button>
+
+      </form> {% endcomment %}
+    </div>
+    </div>
+  </nav>
+  {% comment %} <div class="position-fixed top-50 start-0 translate-middle-y">
+    <a href=""><img src="https://th.bing.com/th/id/OIP.3Oxbr3EA4nOuu7tutl7ZQwHaHO?w=215&h=210&c=7&r=0&o=5&pid=1.7"
+        height="35px" width="35px"></a><br>
+    <a href=""><img
+        src="https://www.bing.com/th?id=OIP.ry_9JZVv6ermz5ugZbdEwQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        height="35px" width="35px"></a><br>
+    <a href=""><img
+        src="https://www.bing.com/th?id=OIP.4Lc8I64AKq6wa8WyYFKvoAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+        height="35px" width="35px"></a><br>
+    <a href=""><img src="https://th.bing.com/th/id/OIP.u7aMmIEvafRQYZW1fYV4dQHaGS?w=247&h=210&c=7&r=0&o=5&pid=1.7"
+        alt="like us on facebook" height="35px" width="35px"></a><br>
+
+  </div> {% endcomment %}
+  <div class="ad"
+    style="text-align: center;height: 150px;font-size: smaller;color: rgb(163, 163, 163);padding-top: 5px;">
+    ADVERTISEMENTS
+  </div>
+  <hr>
+  <center>
+    <div title="content" style="width: 85%;">
+      <div style="height: 60px;background:#043043;color: white;">
+        <div style="text-align: left; justify-content: center;align-items: center;padding: 10px;">
+          <h2>MANAGE <b>EMPLOYEES</b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {% comment %} <button type="button" class="btn btn-danger"><i class="fa fa-minus-circle" aria-hidden="true"></i>
+              Delete</button> {% endcomment %}
+            <button type="button" class="btn btn-success" href="{% url 'job:create' %}" ><i class="fa fa-plus-circle" aria-hidden="true"></i>
+             <a href="{% url 'job:create' %}" style="color: white; text-decoration: none;"> Add new Task</a></button>
+          </h2>
+
+        </div>
+      </div>
+      <div title="table" style="padding: 5px 20px 5px 20px ; background: white;">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"><input type="checkbox"></th>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Start Date - Time</th>
+              <th scope="col">End Date - Time</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%for p in data%}
+            <tr>
+              <th scope="row"><input type="checkbox"></th>
+              <td>{{p.title}}</td>
+              <td>{{p.description}}</td>
+              <td>{{p.start_on}}</td>
+              <td>{{p.end_on}}</td>
+              <td>
+                {{p.priority}}
+              </td>
+              <td>
+                <ul class="list-inline m-0">
+                  <form action="{% url 'job:update' %}" class="my-1"enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+                    <input name="id" value="{{p.id}}" style="display:none;"> 
+                  <li class="list-inline-item">
+                    
+                    <button class="btn btn-success btn-sm rounded-0" type="submit" data-toggle="tooltip"
+                      data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                  </li>
+                </form>
+                  <form action="{% url 'job:delete' %}" enctype="multipart/form-data" method="POST">
+                  {% csrf_token %}
+                  <input name="id" value="{{p.id}}" style="display:none;"> 
+                  <li class="list-inline-item">
+                    <button class="btn btn-danger btn-sm rounded-0" type="submit" data-toggle="tooltip"
+                      data-placement="top" title="Delete" ><i class="fa fa-trash"></i></button>
+                  </li>
+                </form>
+                </ul>
+
+              </td>
+            </tr>
+            {% endfor %}
+         
+          </tbody>
+        </table>
+      </div>
+      <div style="height: relative; background: white;">
+        <table style="width: 97%;">
+          <tr>
+            <td style="text-align: left; font-size: smaller;color:grey">
+
+              Showing {{data | length}}  out of {{data | length}} entries
+            </td>
+
+
+            <td style="justify-content: right;">
+
+              <div style="text-align: right; width: 10%;"></div>
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+  </center>
+
+
+
+
+</body>
+
+<div class="bottom" style="background:white;width: 100%; border: 1px solid black;">
+
+  <!-- <center>
+    <h3>SIMILAR SNIPPETS</h3>
+    <hr style="height: 5px; background:darkgreen;width:120px" </center> -->
+    <!-- <table style="border-spacing:40px;">
+      <tr>
+
+        <td>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      </table> -->
+</div>
+</div>
+
+</html>
